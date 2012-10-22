@@ -18,3 +18,8 @@ void LearningTestSelectingDialog::on_canselPushButton_clicked()
 {
     this->close();
 }
+
+void  LearningTestSelectingDialog::on_okPushButton_clicked()
+{
+
+}

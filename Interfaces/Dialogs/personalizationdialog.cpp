@@ -1,5 +1,6 @@
 #include "personalizationdialog.h"
 #include "ui_personalizationdialog.h"
+#include <QMessageBox>
 
 PersonalizationDialog::PersonalizationDialog(QWidget *parent) :
     QDialog(parent),
@@ -16,6 +17,22 @@ PersonalizationDialog::~PersonalizationDialog()
 
 void PersonalizationDialog::on_okPushButton_clicked()
 {
+    if (ui->nameLineEdit->text() == "")
+    {
+         QMessageBox msgBox;
+         msgBox.setText("Введите имя");
+    }
+
+    if (ui->surnameLineEdit->text() == "")
+    {
+        QMessageBox msgBox;
+        msgBox.setText("Введите фамилию");
+    }
+    if(ui->groupLineEdit->text() == "")
+    {
+        QMessageBox msgBox;
+        msgBox.setText("Введите группу");
+    }
 
 }
 

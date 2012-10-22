@@ -16,6 +16,8 @@ public:
     ~LearningTestSelectingDialog();
 
 private slots:
+    void on_okPushButton_clicked();
+
     void on_canselPushButton_clicked();
 
 private:
